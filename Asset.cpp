@@ -22,7 +22,7 @@ Asset& Asset::operator=(const Asset& a)
 	if (this == &a)
 		return *this;
 
-	// use the copy constructor because we don't need to clean up the exisiting asset (doesn't allocate memory)
+	// use the copy constructor because we don't need to clean up the existing asset (doesn't allocate memory)
 	*this = Asset(a);
 	return *this;
 }
