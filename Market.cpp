@@ -1,4 +1,5 @@
 #include "Market.h"
+#include <algorithm>
 
 Market::Market(const std::vector<std::string>& asset_names, const std::vector<std::vector<double>>& historical_prices)
 	:
@@ -25,7 +26,7 @@ Market::Market(const std::vector<std::string>& asset_names, const std::vector<st
 		add_timed_object(&m_assets[i]);
 
 		// maximum ticks should be set to the longest list of historical prices
-		m_maximum_ticks = std::max(m_maximum_ticks, historical_prices[i].size());
+		m_maximum_ticks = std::max<unsigned int>(m_maximum_ticks, (unsigned int) historical_prices[i].size());
 	}
 }
 

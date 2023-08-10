@@ -1,5 +1,5 @@
 #include "AssetHistory.h"
-#include "util.h"
+#include "Util.h"
 
 // random seed is based on the current time
 thread_local std::default_random_engine AssetHistory::RANDOM_GENERATOR{

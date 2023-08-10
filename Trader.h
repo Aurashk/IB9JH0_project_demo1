@@ -6,7 +6,6 @@
 #include "MarketInteractor.h"
 #include "Market.h"
 #include "Portfolio.h"
-#include "PutOption.h"
 #include "HistoryObserver.h"
 
 class Trader : public MarketInteractor

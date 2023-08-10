@@ -7,8 +7,7 @@
 
 int main()
 {
-#ifdef TEST_CLASS
-	TEST_CLASS::test();
-#endif
-
+	#ifdef TEST_CLASS
+		TEST_CLASS::test();
+	#endif
 }

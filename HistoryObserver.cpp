@@ -1,4 +1,5 @@
 #include "HistoryObserver.h"
+#include <algorithm>
 
 HistoryObserver::HistoryObserver(unsigned int maximum_history)
 	:
